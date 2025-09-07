@@ -158,7 +158,7 @@ app.use('/api', createProxyMiddleware({
   changeOrigin: true,
   timeout: 30000, // 30 second timeout for proxy requests
   proxyTimeout: 30000, // 30 second proxy timeout
-  secure: true, // Enable HTTPS
+  secure: false, // Enable HTTPS
   ws: false,
   buffer: false, // Don't buffer request/response
   onError: (err, req, res) => {
